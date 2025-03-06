@@ -1,14 +1,14 @@
 import React from "react";
-import { companyData } from "../data/companyData";
-import "../App.css"; 
-
+import { companyData } from "../data/companyData"; 
+import { Company } from "../types/dataTypes"; 
+import "../App.css";
 
 const CompanySection: React.FC = () => {
   return (
     <div className="company-section">
-      <h2 className="company-heading">{companyData.heading}</h2>
+      <h2 className="company-heading">Trusted by leading companies</h2>
       <div className="company-logos">
-        {companyData.contents.map((company, index) => (
+        {companyData.contents.map((company: Company, index: number) => (
           <img
             key={index}
             src={company.image.url}

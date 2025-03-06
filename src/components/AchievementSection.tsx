@@ -1,6 +1,7 @@
 import React from "react";
 import { Achievement } from "../types/dataTypes";
 
+
 interface AchievementSectionProps {
   data: Achievement[];
 }
